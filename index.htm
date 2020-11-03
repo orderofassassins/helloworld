@@ -12,20 +12,11 @@
 		#p-t-50 {padding-top:50px;}
 		#red {color: red;}
 	</style>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script>
-		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-		if (!isChrome){
-			$('#iframeAudio').remove()
-		} else {
-			$('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-		}
-	</script>
+	<script>var x = document.getElementById("myAudio"); x.play();</script>
 </head>
 
 <body>
-	<iframe src="audio.ogg" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
-	<audio autoplay loop id="playAudio"> <source src="audio.ogg"> </audio>
+	<audio id="myAudio" controls> <source src="./audio.mp3" type="audio/mpeg"></audio>
 	
 	<div class="flex" id="p-t-50">
 		<img src="./flag.svg" width="200px">
