@@ -12,11 +12,12 @@
 		#p-t-50 {padding-top:50px;}
 		#red {color: red;}
 	</style>
-	<script>var x = document.getElementById("myAudio"); x.play();</script>
+	
 </head>
 
 <body>
-	<audio id="myAudio" controls> <source src="./audio.ogg" type="audio/ogg"></audio>
+	<audio id="myAudio" controls autoplay> <source src="./audio.ogg" type="audio/ogg"></audio>
+	<script>var x = document.getElementById("myAudio"); x.play();</script>
 	
 	<div class="flex" id="p-t-50">
 		<img src="./flag.svg" width="200px">
